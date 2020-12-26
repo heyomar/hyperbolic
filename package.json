@@ -1,0 +1,23 @@
+{
+  "name": "share.links",
+  "version": "1.0.0",
+  "description": "A site to share links of Omar Rasool's web development work.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyomar/share.links.git"
+  },
+  "author": "Omar Rasool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyomar/share.links/issues"
+  },
+  "homepage": "https://github.com/heyomar/share.links#readme",
+  "dependencies": {
+    "bulma": "^0.9.1"
+  },
+  "devDependencies": {}
+}
