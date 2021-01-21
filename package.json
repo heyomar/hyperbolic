@@ -2,10 +2,10 @@
   "name": "share.links",
   "version": "1.0.0",
   "description": "A site to share links of Omar Rasool's web development work.",
-  "main": "app/app.html",
+  "main": "dist/index.html",
   "scripts": {
-    "dev": "parcel app/app.html --no-cache --no-content-hash --no-source-maps --open",
-    "prod": "parcel build app/app.html"
+    "dev": "parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
+    "prod": "parcel build app/index.html --dist-dir dist/ --no-cache --no-source-maps"
   },
   "repository": {
     "type": "git",
