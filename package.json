@@ -2,9 +2,10 @@
   "name": "share.links",
   "version": "1.0.0",
   "description": "A site to share links of Omar Rasool's web development work.",
-  "main": "index.html",
+  "main": "app/app.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
+    "prod": "parcel build app/index.html --no-cache --no-content-hash --no-source-maps --open"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,13 @@
     "url": "https://github.com/heyomar/share.links/issues"
   },
   "homepage": "https://github.com/heyomar/share.links#readme",
-  "dependencies": {
-    "bulma": "^0.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "autoprefixer": "^10.1.0",
+    "parcel": "^2.0.0-nightly.489",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2",
+    "typescript": "^4.1.3"
   }
 }
