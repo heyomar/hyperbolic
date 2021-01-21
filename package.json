@@ -4,8 +4,8 @@
   "description": "A site to share links of Omar Rasool's web development work.",
   "main": "app/app.html",
   "scripts": {
-    "dev": "parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
-    "prod": "parcel build app/index.html --no-cache --no-content-hash --no-source-maps"
+    "dev": "parcel app/app.html --no-cache --no-content-hash --no-source-maps --open",
+    "prod": "parcel build app/app.html --no-cache --no-content-hash --no-source-maps"
   },
   "repository": {
     "type": "git",
