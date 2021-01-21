@@ -5,7 +5,7 @@
   "main": "dist/index.html",
   "scripts": {
     "dev": "parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
-    "prod": "parcel build app/index.html --dist-dir dist/ --no-cache --no-source-maps"
+    "prod": "parcel build app/index.html --dist-dir dist/"
   },
   "repository": {
     "type": "git",
