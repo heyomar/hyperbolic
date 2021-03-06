@@ -1,29 +1,29 @@
 {
-  "name": "share.links",
-  "version": "1.0.0",
-  "description": "A site to share links of Omar Rasool's web development work.",
-  "main": "dist/index.html",
-  "scripts": {
-    "dev": "parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
-    "prod": "parcel build app/index.html --dist-dir dist/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/heyomar/share.links.git"
-  },
-  "author": "Omar Rasool",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/heyomar/share.links/issues"
-  },
-  "homepage": "https://github.com/heyomar/share.links#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "autoprefixer": "^10.1.0",
-    "parcel": "^2.0.0-nightly.489",
-    "postcss": "^8.2.2",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.2",
-    "typescript": "^4.1.3"
-  }
+	"name": "share.links",
+	"version": "1.0.0",
+	"description": "A site to share links of Omar Rasool's web development work.",
+	"scripts": {
+		"clean": "rm -rf dist .parcel-cache",
+		"dev": "parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
+		"prod": "parcel build app/index.html --dist-dir dist/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/heyomar/share.links.git"
+	},
+	"author": "Omar Rasool",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/heyomar/share.links/issues"
+	},
+	"homepage": "https://github.com/heyomar/share.links#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"autoprefixer": "^10.1.0",
+		"parcel": "^2.0.0-nightly.489",
+		"postcss": "^8.2.2",
+		"postcss-cli": "^8.3.1",
+		"tailwindcss": "^2.0.2",
+		"typescript": "^4.1.3"
+	}
 }
