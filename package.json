@@ -5,7 +5,7 @@
 	"scripts": {
 		"clean": "rm -rf dist .parcel-cache",
 		"watch": "parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
-		"build": "parcel build app/index.html --dist-dir dist/"
+		"build": "npm run clean && parcel build app/index.html --dist-dir dist/"
 	},
 	"repository": {
 		"type": "git",
