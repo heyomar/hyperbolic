@@ -4,7 +4,7 @@
 	"description": "A site to share links of Omar Rasool's web development work.",
 	"scripts": {
 		"clean": "rm -rf dist .parcel-cache",
-		"watch": "parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
+		"watch": "npm run clean && parcel app/index.html --no-cache --no-content-hash --no-source-maps --open",
 		"build": "npm run clean && parcel build app/index.html --dist-dir dist/"
 	},
 	"repository": {
