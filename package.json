@@ -4,9 +4,7 @@
     "description": "A site to share links of Omar Rasool's web development work.",
     "scripts": {
         "clean": "rm -rf dist .parcel-cache",
-        "css": "npx tailwindcss -o dist/app.css --watch --jit --purge='app/**/*.html'",
-        "watch": "npm run clean && parcel watch 'app/index.html' --hot",
-        "build": "npm run clean && parcel build app/index.html --dist-dir dist/"
+        "css": "npx tailwindcss -o dist/app.css --watch --jit --purge='app/**/*.html'"
     },
     "repository": {
         "type": "git",
