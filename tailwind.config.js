@@ -1,6 +1,6 @@
 module.exports = {
     // mode: 'jit',
-    purge: ['app/*.html'],
+    purge: ['app/*.html', '/app/assets/*.svg'],
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
@@ -13,8 +13,8 @@ module.exports = {
             }),
         },
         fontFamily: {
-            sans: ['Rubik', 'ui-sans-serif', 'system-ui'],
-            body: ['Rubik'],
+            sans: ['Lexend Deca', 'ui-sans-serif', 'system-ui'],
+            body: ['Lexend Deca'],
         },
         container: {
             center: true,
