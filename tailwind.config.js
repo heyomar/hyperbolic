@@ -11,6 +11,7 @@ module.exports = {
                 genusmedical: "url('/app/assets/bg-genusmedical.png')",
                 monsanto: "url('/app/assets/bg-monsanto.jpg')",
                 capitalone: "url('/app/assets/bg-capitalone.png')",
+                capitalone_sobe: "url('/app/assets/bg-capitalone-sobe.png')",
             }),
         },
         fontFamily: {
