@@ -10,6 +10,7 @@ module.exports = {
                 plebanlaw: "url('/app/assets/bg-plebanlaw.jpg')",
                 genusmedical: "url('/app/assets/bg-genusmedical.png')",
                 monsanto: "url('/app/assets/bg-monsanto.jpg')",
+                capitalone: "url('/app/assets/bg-capitalone.png')",
             }),
         },
         fontFamily: {
