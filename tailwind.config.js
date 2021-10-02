@@ -1,5 +1,4 @@
 module.exports = {
-    mode: 'jit',
     purge: ['app/*.html', '/app/assets/*.svg'],
     darkMode: false, // or 'media' or 'class'
     theme: {
