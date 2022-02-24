@@ -31,7 +31,7 @@ jobs:
       steps:
       - uses: actions/checkout@v2
       - name: Upload ftp
-        uses: ebastianpopp/ftp-action@eb75c5cb29d23ee4a729720a27dfb66403cb0f6d
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
