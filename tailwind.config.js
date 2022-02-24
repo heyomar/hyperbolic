@@ -1,6 +1,5 @@
 module.exports = {
-    purge: ['app/*.html', '/app/assets/*.svg'],
-    darkMode: false, // or 'media' or 'class'
+    content: ['app/*.html', '/app/assets/*.svg'],
     theme: {
         extend: {
             backgroundImage: (theme) => ({
