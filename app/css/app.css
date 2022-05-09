@@ -3,23 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .ColorKoala {
 	text-align: center;
 	font-size: 89px;
 	background: linear-gradient(-45deg, #ef83ff 0%, #34c6ff 50%, #27ff7d 100%);
 	background-size: 100% 100%;
-
 	animation: Gradient 10s ease infinite;
-
-	@keyframes Gradient {
-		0% {
-			background-position: 0% 50%;
-		}
-		50% {
-			background-position: 100% 50%;
-		}
-		100% {
-			background-position: 0% 50%;
-		}
-	}
 }
