@@ -13,11 +13,14 @@ module.exports = {
 				utex: "url('/app/assets/bg-utex.jpg')",
 				ea: "url('/app/assets/bg-ea.png')",
 				next: "url('/app/assets/bg-tmobile.jpg')",
+				tin: "url('/app/assets/bg-tin.jpg')",
+				cloud: "url('/app/assets/bg-cloud.jpg')",
 			}),
 		},
 		fontFamily: {
 			sans: ['Lexend Deca', 'ui-sans-serif', 'system-ui'],
 			body: ['Lexend Deca'],
+			arial: ['Arial'],
 		},
 		container: {
 			center: true,
