@@ -15,6 +15,7 @@ module.exports = {
 				next: "url('/app/assets/bg-tmobile.jpg')",
 				tin: "url('/app/assets/bg-tin.jpg')",
 				cloud: "url('/app/assets/bg-cloud.jpg')",
+				floral: "url('/app/assets/bg-floral.png')",
 			}),
 		},
 		fontFamily: {
