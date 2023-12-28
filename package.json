@@ -18,10 +18,10 @@
 	},
 	"homepage": "https://github.com/heyomar/share.links#readme",
 	"devDependencies": {
-		"@parcel/packager-raw-url": "^2.9.3",
-		"@parcel/transformer-webmanifest": "^2.9.3",
+		"@parcel/packager-raw-url": "^2.10.3",
+		"@parcel/transformer-webmanifest": "^2.10.3",
 		"autoprefixer": "^10.4.15",
-		"parcel": "^2.9.3",
+		"parcel": "^2.10.3",
 		"postcss": "^8.4.29",
 		"postcss-cli": "^10.1.0",
 		"tailwindcss": "^3.3.3",
