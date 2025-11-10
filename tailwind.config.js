@@ -16,6 +16,7 @@ module.exports = {
 				tin: "url('/app/assets/bg-tin.jpg')",
 				cloud: "url('/app/assets/bg-cloud.jpg')",
 				floral: "url('/app/assets/bg-floral.png')",
+				journal: "url('/app/assets/journal.png')",
 			}),
 		},
 		fontFamily: {
