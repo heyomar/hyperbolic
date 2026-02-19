@@ -137,3 +137,43 @@
 .post-body strong {
 	font-weight: 700;
 }
+
+/* Page transitions — View Transitions API */
+@view-transition {
+	navigation: auto;
+}
+
+::view-transition-old(root) {
+	animation: vt-out 0.22s ease-in forwards;
+}
+
+::view-transition-new(root) {
+	animation: vt-in 0.22s ease-out forwards;
+}
+
+@keyframes vt-out {
+	to {
+		opacity: 0;
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes vt-in {
+	from {
+		opacity: 0;
+		transform: translateY(6px);
+	}
+}
+
+/* Keep particle canvas stable across transitions */
+#particles {
+	view-transition-name: particles-bg;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation: none;
+	}
+}
