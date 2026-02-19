@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-cloud bg-cover">
+<html lang="en" class="bg-cloud bg-cover bg-fixed">
 
 <head>
 	<meta charset="UTF-8" />
@@ -14,8 +14,12 @@
 </head>
 
 <body class="flex flex-col items-center justify-center min-h-screen px-8 py-10 text-white max-w-screen-sm mx-auto">
-	<header class="flex flex-row justify-end flex-auto w-full gap-4 mb-8">
-
+	<canvas id="particles" class="fixed inset-0 -z-10"></canvas>
+	<header class="flex flex-row justify-between flex-auto w-full gap-4 mb-8">
+		<a class="flex items-center gap-2 text-sm font-semibold opacity-70 hover:opacity-100 transition-opacity" href="/blog/">
+			Writing
+		</a>
+		<div class="flex flex-row gap-4">
 		<a class="flex gap-2 items-center" target="_blank" href="https://github.com/heyomar">
 			<svg class="fill-current text-white w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" alt="github logo">
 				<path
@@ -30,9 +34,10 @@
 			</svg>
             <span class="sr-only">Dribbble</span>
         </a>
+		</div>
 	</header>
 	<main class="container">
-		<section class="mb-5">
+		<section class="mb-5" data-aos="fade-up">
 			<h1 class="mb-2 text-3xl font-bold">Welcome,</h1>
 			<p class="text-xl md:text-2xl max-w-prose">
 				<span class="opacity-90">
@@ -48,11 +53,11 @@
 		</section>
 
 
-		<section class="mb-8 max-w-3xl">
+		<section class="mb-8 max-w-3xl" data-aos="fade-up">
 			<h2 class="mb-3 text-sm font-semibold uppercase inline-block bg-black rounded-lg px-3 py-2">Professional Work</h2>
 			<ul class="font-bold text-center grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
 
-				<li
+				<li data-aos="fade-up" data-aos-delay="0"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-tulane h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl bg-[#21543E]  w-full  rounded-lg h-full flex  items-center justify-center"
 						target="_blank" href="https://tulane.edu/">
@@ -60,56 +65,56 @@
 					</a>
 				</li>
 
-				<li
+				<li data-aos="fade-up" data-aos-delay="50"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-ea h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl bg-gray-800/30 w-full  rounded-lg h-full flex  items-center justify-center"
 						target="_blank" href="https://endeavoranalytics.com/">
 						<img class="w-56 h-auto " src="/assets/logo-ea.svg" alt="endeavor analytics logo">
 					</a>
 				</li>
-				<li
+				<li data-aos="fade-up" data-aos-delay="100"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-utex h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl bg-gray-800/30 w-full  rounded-lg h-full flex  items-center justify-center"
 						target="_blank" href="https://www.mccombs.utexas.edu/">
 						<img class="w-56 h-auto " src="/assets/logo-utex.svg" alt="university of texas logo">
 					</a>
 				</li>
-				<li
+				<li data-aos="fade-up" data-aos-delay="150"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-next h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl bg-gray-800/30 w-full  rounded-lg h-full flex  items-center justify-center"
 						target="_blank" href="https://nexttechdiversity.com/">
 						<img class="w-40 h-auto " src="/assets/logo-next.png" alt="t-mobile program logo">
 					</a>
 				</li>
-				<li
+				<li data-aos="fade-up" data-aos-delay="200"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-capitalone-sobe h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl bg-gray-800/30 w-full  rounded-lg h-full flex  items-center justify-center"
 						target="_blank" href="https://www.capitalonevirtualexperiences.com/">
 						<img class="w-auto h-28 " src="/assets/logo-capitalone-sobe.svg" alt="capital one south beach logo">
 					</a>
 				</li>
-				<li
+				<li data-aos="fade-up" data-aos-delay="250"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-capitalone h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl bg-gray-800/20 w-full  rounded-lg h-full flex  items-center justify-center"
 						target="_blank" href="https://www.capitalonecafeevents.com/">
 						<img class="w-auto h-14 " src="/assets/logo-capitalone-white.png" alt="capital one logo">
 					</a>
 				</li>
-				<li
+				<li data-aos="fade-up" data-aos-delay="300"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-waterboys h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl w-full bg-gray-800/20  rounded-lg h-full flex  items-center justify-center"
 						target="_blank" href="https://web.archive.org/web/20200513141215/https://waterboys.org/">
 						<img class="w-auto h-6 " src="/assets/logo-waterboys.png" alt="waterboys logo">
 					</a>
 				</li>
-				<li
+				<li data-aos="fade-up" data-aos-delay="350"
 					class="w-full transition duration-300 ease-in-out transform bg-no-repeat bg-cover rounded-lg cursor-pointer bg-genusmedical md:bg-center h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105">
 					<a class="text-center text-3xl w-full  rounded-lg h-full flex items-center justify-center" target="_blank"
 						href="https://genusmedical.com/">
 						<img class="w-auto h-10" src="/assets/logo-genusmedical.svg" alt="genus medical logo">
 					</a>
 				</li>
-				<li
+				<li data-aos="fade-up" data-aos-delay="400"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer bg-monsanto h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105">
 					<a class="text-center text-3xl w-full bg-gray-800/30 rounded-lg h-full flex items-center justify-center"
 						target="_blank" href="https://www.connectinsystem.com/">
@@ -117,14 +122,14 @@
 					</a>
 				</li>
 
-				<li
+				<li data-aos="fade-up" data-aos-delay="450"
 					class="w-full transition duration-300 ease-in-out transform bg-center bg-no-repeat bg-cover rounded-lg cursor-pointer bg-mamalola h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105">
 					<a class="text-center text-3xl w-full bg-gray-800/20 rounded-lg h-full flex items-center justify-center"
 						target="_blank" href="https://mamalola.com">
 						<img class="w-auto h-10" src="/assets/logo-mamalola.png" alt="mama lola logo">
 					</a>
 				</li>
-				<li
+				<li data-aos="fade-up" data-aos-delay="500"
 					class="w-full transition duration-300 ease-in-out transform bg-no-repeat bg-cover rounded-lg cursor-pointer bg-plebanlaw h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105">
 					<a class="text-center text-3xl w-full rounded-lg h-full flex items-center justify-center" target="_blank"
 						href="https://plebanlaw.com">
@@ -133,11 +138,11 @@
 				</li>
 			</ul>
 		</section>
-		<section class="mb-8 max-w-3xl">
+		<section class="mb-8 max-w-3xl" data-aos="fade-up">
 			<h2 class="mb-3 text-sm font-semibold uppercase inline-block bg-black rounded-lg px-3 py-2">For Dreamers</h2>
 			<ul class="font-bold text-center grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
 
-				<li
+				<li data-aos="fade-up" data-aos-delay="0"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-tulane h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl bg-[#F4D24D]  w-full  rounded-lg h-full flex  items-center justify-center"
 						target="_blank" href="https://thewildernessadventureclub.com/">
@@ -145,7 +150,7 @@
 					</a>
 				</li>
 
-				<li
+				<li data-aos="fade-up" data-aos-delay="50"
 					class="w-full transition duration-300 ease-in-out transform bg-top bg-no-repeat bg-cover rounded-lg cursor-pointer lg:bg-center bg-tulane h-36 hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ">
 					<a class="text-center text-3xl bg-tin w-full bg-cover bg-top rounded-lg h-full flex items-center justify-center"
 						target="_blank" href="https://tindirdamal.com/">
@@ -155,10 +160,10 @@
 			</ul>
 		</section>
 
-		<section class="mb-8">
+		<section class="mb-8" data-aos="fade-up">
 			<h2 class="mb-3 text-sm font-semibold uppercase inline-block bg-black rounded-lg px-3 py-2">Research</h2>
 			<ul class=" mb-8 font-bold text-center grid grid-cols-1 gap-x-6 ">
-				<li
+				<li data-aos="fade-up"
 					class="w-full h-36 transition duration-300 ease-in-out transform rounded-lg cursor-pointer hover:scale-100 hover:shadow-2xl sm:hover:scale-105 bg-journal">
 					<a class="text-center text-2xl w-full rounded-lg h-full flex items-center justify-center gap-4"
 						target="_blank" href="https://urjp.psych.ucla.edu/wp-content/uploads/sites/76/2025/11/URJP-12th-Edition-Summer-2025-1.pdf"> Experiences of Neurodiversity : Belonging,
@@ -169,10 +174,10 @@ Social Support, and Well-Being
 			</ul>
 		</section>
 
-		<section class="mb-8">
+		<section class="mb-8" data-aos="fade-up">
 			<h2 class="mb-3 text-sm font-semibold uppercase inline-block bg-black rounded-lg px-3 py-2">Hobby Projects</h2>
 			<ul class=" mb-8 font-bold text-center grid grid-cols-1 gap-x-6 ">
-				<li
+				<li data-aos="fade-up"
 					class="w-full h-36 transition duration-300 ease-in-out transform rounded-lg cursor-pointer  hover:scale-100 hover:shadow-2xl sm:hover:scale-105 ColorKoala">
 					<a class="text-center text-3xl w-full rounded-lg h-full flex items-center justify-center gap-4"
 						target="_blank" href="https://colorkoala.netlify.app">

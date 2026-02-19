@@ -49,3 +49,91 @@
 	background-size: 100% 100%;
 	animation: Gradient 10s ease infinite;
 }
+
+/* Blog post body — styles for Markdown-generated HTML */
+.post-body {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.post-body h2 {
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	display: inline-block;
+	background-color: black;
+	border-radius: 0.5rem;
+	padding: 0.5rem 0.75rem;
+	margin-top: 0.25rem;
+}
+
+.post-body h3 {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.post-body p {
+	opacity: 0.9;
+	line-height: 1.75;
+}
+
+.post-body a {
+	color: rgb(250 204 21);
+	text-decoration: underline;
+}
+
+.post-body code {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 0.25rem;
+	padding: 0.1rem 0.375rem;
+	color: rgb(250 204 21);
+	font-size: 0.875em;
+}
+
+.post-body pre {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	overflow-x: auto;
+}
+
+.post-body pre code {
+	background: none;
+	padding: 0;
+	color: inherit;
+}
+
+.post-body ul {
+	list-style: disc;
+	padding-left: 1.5rem;
+	opacity: 0.9;
+	line-height: 1.75;
+}
+
+.post-body ol {
+	list-style: decimal;
+	padding-left: 1.5rem;
+	opacity: 0.9;
+	line-height: 1.75;
+}
+
+.post-body li {
+	margin-bottom: 0.25rem;
+}
+
+.post-body blockquote {
+	border-left: 2px solid rgba(255, 255, 255, 0.3);
+	padding-left: 1rem;
+	opacity: 0.8;
+	font-style: italic;
+}
+
+.post-body hr {
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+.post-body strong {
+	font-weight: 700;
+}
