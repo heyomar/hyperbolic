@@ -1,8 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600;700&display=swap');
-@import '../../node_modules/aos/dist/aos.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+	/* Font families */
+	--font-sans: 'Lexend Deca', ui-sans-serif, system-ui;
+	--font-body: 'Lexend Deca';
+	--font-arial: Arial;
+
+	/* Custom background images */
+	--background-image-mamalola: url('/assets/bg-mamalola.jpg');
+	--background-image-waterboys: url('/assets/bg-waterboys.jpg');
+	--background-image-plebanlaw: url('/assets/bg-plebanlaw.jpg');
+	--background-image-genusmedical: url('/assets/bg-genusmedical.png');
+	--background-image-monsanto: url('/assets/bg-monsanto.jpg');
+	--background-image-capitalone: url('/assets/bg-capitalone.jpg');
+	--background-image-capitalone-sobe: url('/assets/bg-capitalone-sobe.png');
+	--background-image-utex: url('/assets/bg-utex.jpg');
+	--background-image-ea: url('/assets/bg-ea.png');
+	--background-image-next: url('/assets/bg-tmobile.jpg');
+	--background-image-tin: url('/assets/bg-tin.jpg');
+	--background-image-cloud: url('/assets/bg-cloud.jpg');
+	--background-image-floral: url('/assets/bg-floral.png');
+	--background-image-journal: url('/assets/journal.png');
+}
+
+@layer utilities {
+	.container {
+		margin-inline: auto;
+	}
+}
 
 @keyframes Gradient {
 	0% {
